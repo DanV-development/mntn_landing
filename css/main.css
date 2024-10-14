@@ -8,7 +8,7 @@ body {
     background-color: #0B1D26;
     min-height: 100vh;
     overflow-x: hidden;
-    height: 200vh;
+    color: #fafafa
 }
 
 :root {
@@ -31,7 +31,6 @@ body {
 }
 
 h1 {
-    color: #fafafa;
     font-family: chronicle-display-semibold-cstm;
     font-size: calc((var(--index)) * 2);
 }
@@ -48,7 +47,6 @@ h3 {
     top: calc(var(--index) * 6.5);
     display: grid;
     font-family: gilroy-bold-cstm;
-    color: #fafafa;
     z-index: 1;
 }
 
@@ -79,8 +77,6 @@ h3 {
     right: 0;
 }
 
-
-
 .hero-section {
     display: flex;
 }
@@ -103,6 +99,7 @@ h3 {
 
 .hero-section__image {
     width: 100vw;
+    min-height: 100vh;
     object-fit: cover; /* Масштабирование изображения без искажения пропорций */
 }
 
@@ -127,7 +124,6 @@ h3 {
 
 .hero-section__follow-us {
     font-family: gilroy-bold-cstm;
-    color: #fafafa;
     display: flex;
     align-items: center;
     position: absolute;
@@ -179,9 +175,44 @@ h3 {
 
 .hero-section__scroll-down span {
     font-family: gilroy-bold-cstm;
-    color: #fafafa;
     margin-right: calc(var(--index) * 0.5);
     font-size: calc(var(--index) * 0.8);
+}
+
+.gallery {
+    margin-left: calc(var(--index) * 6);
+    margin-right: calc(var(--index) * 6);
+}
+
+.gallery__block {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.gallery__left, .gallery__right {
+    display: flex;
+}
+
+
+.gallery__block-number {
+    font-family: gilroy-bold-cstm;
+    font-size: calc(var(--index) * 8);
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery__text-content {
+    margin-left: calc(var(--index) * -2.8);
+    margin-top: calc(var(--index) * 3.8);
+}
+
+.gallery__img-content {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.footer {
+    height: 10%;
 }
 
 @media (max-width: 650px) {
