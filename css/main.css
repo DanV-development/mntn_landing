@@ -229,8 +229,29 @@ h3 {
     margin-left: calc(var(--index) * 3);
 }
 
+/* .footer {
+    height: calc(var(--index) * 5);
+    margin-left: calc(var(--index) * 6);
+    margin-right: calc(var(--index) * 6);
+} */
+
 .footer {
-    height: 10%;
+    display: grid;
+    grid-template-columns: calc(var(--index) * 15) calc(var(--index) * 15) calc(var(--index) * 15);
+    justify-content: center;
+    padding-bottom: calc(var(--index) * 2);
+}
+
+.footer__main-info {
+    margin-left: calc(var(--index) * 3);
+}
+
+.footer__contact-info {
+    display: grid;
+}
+
+.footer__contact-item {
+    padding-top: calc(var(--index) * 0.4);
 }
 
 @media (max-width: 650px) {
