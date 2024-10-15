@@ -9,7 +9,7 @@
     <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
 
-    <script src="js/app.js"></script>
+    <script src="js/app.js" defer></script>
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -29,139 +29,144 @@
             3
         </span>
     </div>
-
-    <section class="hero-section">
-        <div class="hero-section__image_container">
-            <img class="hero-section__image" src="img/hero.jpg" alt="Hero image">
-        </div>
-        <div class="hero-section__header">
-            <div class="hero-section__header-text-content">
-                <!-- Follow Us -->
-                <div class="hero-section__follow-us">
-                    <span>
-                        Follow us
-                    </span>
-                    <a href="#">
-                        <img src="img/instagram.png" alt="Instagram logo">
-                    </a>
-                    <a href="#">
-                        <img src="img/x.png" alt="X logo">
-                    </a>
+    
+    <div class="wrapper">
+        <div class="content">
+            <section class="hero-section">
+                <div class="hero-section__image_container">
+                    <img class="hero-section__image" src="img/hero.jpg" alt="Hero image">
                 </div>
-                
-                <!-- Page header -->
-                <div class="h3-separator">
-                    <div class="h3-separator__line"></div>
-                    <h3>A HIKING GUIDE</h3>
-                </div>
-                <h1>Be prepared for the </h1>
-                <h1>Mountains and beyond!</h1>
-                
-                <button class="hero-section__scroll-down clear-btn">
-                    <span>scroll down</span>
-                    <img src="img/arrow.png" alt="Arrow scroll down">
-                </button>
-            </div>
-
-        </div>
-    </section>
-
-    <main class="gallery">
-        <div class="gallery__block">
-            <div class="gallery__left">
-                <span class="gallery__block-number">
-                    01
-                </span>
-                <span class="gallery__text-content">
-                    <div class="h3-separator">
-                        <div class="h3-separator__line"></div>
-                        <h3>GET STARTED</h3>
+                <div class="hero-section__header">
+                    <div class="hero-section__header-text-content">
+                        <!-- Follow Us -->
+                        <div class="hero-section__follow-us">
+                            <span>
+                                Follow us
+                            </span>
+                            <a href="#">
+                                <img src="img/instagram.png" alt="Instagram logo">
+                            </a>
+                            <a href="#">
+                                <img src="img/x.png" alt="X logo">
+                            </a>
+                        </div>
+                        
+                        <!-- Page header -->
+                        <div data-speed=".75" class="h3-separator">
+                            <div class="h3-separator__line"></div>
+                            <h3>A HIKING GUIDE</h3>
+                        </div>
+                        <h1 data-speed=".75">Be prepared for the </h1>
+                        <h1 data-speed=".75">Mountains and beyond!</h1>
+                        
+                        <button data-speed=".75" class="hero-section__scroll-down clear-btn">
+                            <span>scroll down</span>
+                            <img src="img/arrow.png" alt="Arrow scroll down">
+                        </button>
                     </div>
-                    <h1>What level of hiker</h1>
-                    <h1>are you?</h1>
-                    Determining what level of hiker you are can be an important tool when 
-                    planning future hikes. This hiking level guide will help you plan hikes 
-                    according to different hike ratings set by various websites like All Trails and 
-                    Modern Hiker. What type of hiker are you – novice, moderate, advanced 
-                    moderate, expert, or expert backpacker?
-                </span>
-            </div>
-            <div class="gallery__right">
-                <div class="gallery__img-content">
-                    <img class="gallery__img-content" src="img/image_1.jpg" alt="First gallery image">
+        
                 </div>
-            </div>
-        </div>
-
-        <div class="gallery__block-inverse">
-            <div class="gallery__left">
-                <div class="gallery__img-content-inverse">
-                    <img class="gallery__img-content" src="img/image_2.jpg" alt="Second gallery image">
-                </div>
-            </div>
-            <div class="gallery__right">
-                <span class="gallery__block-number-inverse">
-                    02
-                </span>
-                <span class="gallery__text-content">
-                    <div class="h3-separator">
-                        <div class="h3-separator__line"></div>
-                        <h3>HIKING ESSENTIALS</h3>
+            </section>
+        
+            <main class="gallery">
+                <div class="gallery__block">
+                    <div class="gallery__left">
+                        <span class="gallery__block-number">
+                            01
+                        </span>
+                        <span class="gallery__text-content">
+                            <div class="h3-separator">
+                                <div class="h3-separator__line"></div>
+                                <h3>GET STARTED</h3>
+                            </div>
+                            <h1>What level of hiker</h1>
+                            <h1>are you?</h1>
+                            Determining what level of hiker you are can be an important tool when 
+                            planning future hikes. This hiking level guide will help you plan hikes 
+                            according to different hike ratings set by various websites like All Trails and 
+                            Modern Hiker. What type of hiker are you – novice, moderate, advanced 
+                            moderate, expert, or expert backpacker?
+                        </span>
                     </div>
-                    <h1>Picking the right</h1>
-                    <h1>Hiking Gear!</h1>
-                    The nice thing about beginning hiking is that you don’t really need 
-                    any special gear, you can probably get away with things you already have. 
-                    Let’s start with clothing. A typical mistake hiking beginners make is wearing 
-                    jeans and regular clothes, which will get heavy 
-                    and chafe wif they get sweaty or wet.
-                </span>
-            </div>
-        </div>
-
-        <div class="gallery__block">
-            <div class="gallery__left">
-                <span class="gallery__block-number">
-                    03
-                </span>
-                <span class="gallery__text-content">
-                    <div class="h3-separator">
-                        <div class="h3-separator__line"></div>
-                        <h3>WHERE YOU GO IS THE KEY</h3>
+                    <div class="gallery__right">
+                        <div class="gallery__img-content">
+                            <img class="gallery__img-content" src="img/image_1.jpg" alt="First gallery image">
+                        </div>
                     </div>
-                    <h1>Understand Your</h1>
-                    <h1>Map & Timing</h1>
-                    To start, print out the hiking guide and map. 
-                    If it’s raining, throw them in a Zip-Lock bag. 
-                    Read over the guide, study the map, and have a good idea of what to expect. 
-                    I like to know what my next landmark is as I hike. For example, 
-                    I’ll read the guide and know that say, in a mile, 
-                    I make a right turn at the junction..
-                </span>
-            </div>
-            <div class="gallery__right">
-                <div class="gallery__img-content">
-                    <img class="gallery__img-content" src="img/image_3.jpg" alt="Third gallery image">
                 </div>
-            </div>
+        
+                <div class="gallery__block-inverse">
+                    <div class="gallery__left">
+                        <div class="gallery__img-content-inverse">
+                            <img class="gallery__img-content" src="img/image_2.jpg" alt="Second gallery image">
+                        </div>
+                    </div>
+                    <div class="gallery__right">
+                        <span class="gallery__block-number-inverse">
+                            02
+                        </span>
+                        <span class="gallery__text-content">
+                            <div class="h3-separator">
+                                <div class="h3-separator__line"></div>
+                                <h3>HIKING ESSENTIALS</h3>
+                            </div>
+                            <h1>Picking the right</h1>
+                            <h1>Hiking Gear!</h1>
+                            The nice thing about beginning hiking is that you don’t really need 
+                            any special gear, you can probably get away with things you already have. 
+                            Let’s start with clothing. A typical mistake hiking beginners make is wearing 
+                            jeans and regular clothes, which will get heavy 
+                            and chafe wif they get sweaty or wet.
+                        </span>
+                    </div>
+                </div>
+        
+                <div class="gallery__block">
+                    <div class="gallery__left">
+                        <span class="gallery__block-number">
+                            03
+                        </span>
+                        <span class="gallery__text-content">
+                            <div class="h3-separator">
+                                <div class="h3-separator__line"></div>
+                                <h3>WHERE YOU GO IS THE KEY</h3>
+                            </div>
+                            <h1>Understand Your</h1>
+                            <h1>Map & Timing</h1>
+                            To start, print out the hiking guide and map. 
+                            If it’s raining, throw them in a Zip-Lock bag. 
+                            Read over the guide, study the map, and have a good idea of what to expect. 
+                            I like to know what my next landmark is as I hike. For example, 
+                            I’ll read the guide and know that say, in a mile, 
+                            I make a right turn at the junction..
+                        </span>
+                    </div>
+                    <div class="gallery__right">
+                        <div class="gallery__img-content">
+                            <img class="gallery__img-content" src="img/image_3.jpg" alt="Third gallery image">
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+            <section class="footer">
+                <div class="footer__contact-info">
+                    <h2>MNTN Landing:</h2>
+                    <span class="footer__contact-item">Developed by Danil Vorobyev</span>
+                </div>
+                <div class="footer__contact-info">
+                    <h2>Email:</h2>
+                    <span class="footer__contact-item">danv.development@gmail.com</span>
+                </div>
+                <div class="footer__contact-info">
+                    <h2>GitHub:</h2>
+                    <span class="footer__contact-item">https://github.com/danv-development</span>
+                </div>
+        
+            </section>
         </div>
-    </main>
-
-    <section class="footer">
-        <div class="footer__contact-info">
-            <h2>MNTN Landing:</h2>
-            <span class="footer__contact-item">Developed by Danil Vorobyev</span>
-        </div>
-        <div class="footer__contact-info">
-            <h2>Email:</h2>
-            <span class="footer__contact-item">danv.development@gmail.com</span>
-        </div>
-        <div class="footer__contact-info">
-            <h2>GitHub:</h2>
-            <span class="footer__contact-item">https://github.com/danv-development</span>
-        </div>
-
-    </section>
+    </div>
+    
 
 </body>
 </html>

@@ -85,6 +85,7 @@ h3 {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .hero-section__image_container::after {
@@ -228,12 +229,6 @@ h3 {
     margin-right: 0;
     margin-left: calc(var(--index) * 3);
 }
-
-/* .footer {
-    height: calc(var(--index) * 5);
-    margin-left: calc(var(--index) * 6);
-    margin-right: calc(var(--index) * 6);
-} */
 
 .footer {
     display: grid;
