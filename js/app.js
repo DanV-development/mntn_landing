@@ -47,7 +47,6 @@ document.addEventListener("scroll", function() {
     let scrollPercent = scrollTop / documentHeight;
 
     let activeIndicator = document.querySelector(".page-scroll-indicatior__active-section");
-    console.log(scrollPercent * 100)
 
     if (scrollPercent * 100 < 30) {
         activeIndicator.style.top = "0";
