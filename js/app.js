@@ -153,12 +153,10 @@ scrollDownBtn.addEventListener("click", function() {
             document.documentElement.scrollHeight - window.innerHeight
         );
 
-        // Высчитываем 25% от общей высоты страницы
         let scrollAmount = documentHeight * 0.3;
 
-        // Прокрутка на 25% вниз от текущей позиции
         window.scrollTo({
             top: scrollAmount,
-            behavior: 'smooth' // плавная прокрутка
+            behavior: "smooth",
         });
 })
